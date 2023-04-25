@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: hsl(192deg, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  background: hsl(193deg, 100%, 96%);
+}
+body main {
+  background-image: url(../img/bg-hero-desktop.svg);
+  padding: 50px;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .button {
+  text-align: center;
+  width: 100px;
+  padding: 7px 10px;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+body header .button:hover {
+  background: hsl(322deg, 100%, 66%);
+}
+body header img {
+  width: 70%;
+}
+body .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .hero img {
+  width: 50%;
+}
+body .hero .text {
+  padding: 10px;
+}
+body .hero .text h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+body .hero .text .button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: hsl(322deg, 100%, 66%);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.5s;
+  margin-top: 20px;
+  font-size: 0.8em;
+  border: 2px solid hsl(322deg, 100%, 66%);
+}
+body .hero .text .button:hover {
+  background: none;
+  color: black;
+}
+body section {
+  width: 100%;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body section .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 50px;
+  padding: 30px;
+  background: #fafaec;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(0, 0, 0, 0.2);
+}
+body section .item img {
+  width: 50%;
+}
+body section .item h2 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+body .red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  background: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 20px;
+  transform: translateY(59%);
+}
+body .red .button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: hsl(322deg, 100%, 66%);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.5s;
+  margin-top: 20px;
+  font-size: 0.8em;
+  border: 2px solid hsl(322deg, 100%, 66%);
+}
+body .red .button:hover {
+  background: none;
+  color: black;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(192deg, 100%, 9%);
+  height: 400px;
+  color: white;
+  padding: 0 20px;
+}
+body footer p {
+  margin: 10px 0;
+}
+body footer .first {
+  width: 300px;
+}
+body footer .first article {
+  display: flex;
+  align-items: center;
+}
+body footer .first article i {
+  margin-right: 10px;
+}
+body footer .scond {
+  display: flex;
+  flex-direction: column;
+}
+body footer .scond a {
+  text-decoration: none;
+  color: white;
+}
+body footer .scond a:hover {
+  text-decoration: underline;
+}
+body footer .last i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+body footer .last i:hover {
+  color: hsl(322deg, 100%, 66%);
+}
+@media (max-width: 640px) {
+  body main {
+    padding: 20px;
+    background-image: url(../img/bg-hero-mobile.svg);
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  body main .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  body main .hero .text {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 350px;
+    text-align: center;
+  }
+  body main .hero .text h1 {
+    font-size: 30px;
+  }
+  body .item {
+    text-align: center;
+  }
+  body .item h2 {
+    font-size: 1em;
+  }
+  body .red {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  body .item {
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+  }
+  body .item div {
+    width: 80%;
+  }
+  body footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body footer .first {
+    text-align: center;
+  }
+  body footer .first article {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=stlye.css.map */
